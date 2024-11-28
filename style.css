@@ -134,6 +134,9 @@ nav ul li a:hover {
         display: block;
         margin: 10px 0;
     }
+    nav ul {
+        flex-wrap: wrap;
+    }
 }
 
 /* Media Query for screens smaller than 480px (mobile phones) */
@@ -147,9 +150,7 @@ nav ul li a:hover {
     }
 
     .parent {
-        margin: 10px;
         display: flex;
-        
     }
 
     .meniu {
@@ -158,5 +159,11 @@ nav ul li a:hover {
 
     footer {
         font-size: 0.8rem;
+        flex-wrap:wrap;
     }
-}
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    
