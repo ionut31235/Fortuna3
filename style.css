@@ -1,0 +1,162 @@
+.titlu1 {
+    display: flex;
+    justify-content: center;
+    padding-top:120px;
+    color: black;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+h2{
+    display:flex;
+    justify-content: center;
+    color: black;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.background {
+    width: 100%;
+    height: 300px;
+    background-image: url(background.jpg);
+}
+
+.parent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    gap: 10px;
+}
+
+.meniu{
+    display: flex;
+    justify-content: center;
+}
+
+.obiecte{
+    display: flex;
+    justify-content: center;
+}
+
+/*footer/*/
+.footer{
+    display:flex;
+    padding:10px;
+    margin:10px;
+    gap:30px;
+    justify-content: center;
+    background: black;
+
+}
+ 
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.jos{
+    color: white
+}
+/* Stil pentru meniul de navigare */
+nav {
+    background-color: #1d1d1b;
+    padding: 10px;
+    border:solid black;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #3c3e32;
+    color: white;
+}
+
+#weekend{
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+ #harta{
+    display:flex;
+    justify-content: center;
+ }
+ 
+ #contact{
+    text-align: center;
+ }
+ 
+ #fortuna{
+    width:100vw;
+    height: 500px;
+    background-image: url("./308076598_523052356487095_8484943915919284111_n.jpg");
+ }
+
+ #descriere{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top:
+ }
+
+ @media (max-width: 768px) {
+    .titlu1 {
+        font-size: 2.5rem;
+    }
+
+    .titlu2 {
+        font-size: 1.5rem;
+    }
+
+    .parent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .meniu {
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Media Query for screens smaller than 480px (mobile phones) */
+@media (max-width: 480px) {
+    .titlu1 {
+        font-size: 2rem;
+    }
+
+    .titlu2 {
+        font-size: 1.2rem;
+    }
+
+    .parent {
+        margin: 10px;
+        display: flex;
+        
+    }
+
+    .meniu {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
